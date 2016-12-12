@@ -16,7 +16,7 @@ export function recursiveBestFirstSearch(problem, h = null) {
         var successor = node.expand(problem);
 
         if (successor.length == 0) {
-            return [null, Infinity]
+            return [null, Infinity];
         }
 
         for (var s in successor) {
@@ -36,7 +36,7 @@ export function recursiveBestFirstSearch(problem, h = null) {
             else {
                 var alternative = Infinity;
             }
-            var results = RBFS(problem, best, Math.min(flimit, alternative))
+            var results = RBFS(problem, best, Math.min(flimit, alternative));
             var result = results[0];
             best.f = results[1];
 

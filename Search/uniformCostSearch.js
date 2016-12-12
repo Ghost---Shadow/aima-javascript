@@ -6,5 +6,5 @@ import * as BFGS from 'bestFirstGraphSearch';
  * @returns {*}
  */
 export function uniformCostSearch(problem) {
-    return BFGS.bestFirstGraphSearch(problem, node => node.pathCost())
+    return BFGS.bestFirstGraphSearch(problem, node => node.pathCost());
 }

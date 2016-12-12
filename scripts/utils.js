@@ -25,7 +25,7 @@
       minItemVal = Math.min (currentItemVal, minItemVal);
     }
     return (minItem);
-  }
+  };
 
   argmin = function (sequence, fn) { return (min (sequence, fn)); };
   argmax = function (sequence, fn) {

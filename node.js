@@ -49,7 +49,7 @@ export class Node {
      */
     state() {
         return this.state;
-    };
+    }
 
     /**
      *
@@ -57,7 +57,7 @@ export class Node {
      */
     parent() {
         return this.parent;
-    };
+    }
 
     /**
      *
@@ -65,7 +65,7 @@ export class Node {
      */
     action() {
         return this.action;
-    };
+    }
 
     /**
      *
@@ -73,8 +73,8 @@ export class Node {
      * the initial state to the node, as indicated by the parent pointers.
      */
     pathCost() {
-        return this.pathCost
-    };
+        return this.pathCost;
+    }
 
     /**
      * @return Array.<T> array of nodes forming the path from the root to this node

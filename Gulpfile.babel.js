@@ -26,7 +26,7 @@ gulp.task('deploy', () => {
 });
 
 gulp.task('copy', function() {
-    return gulp.src(['*-*/*.html','*-*/*.js'])		
+    return gulp.src(['index.html','header.html','*-*/*.html','*-*/*.js'])		
         .pipe(gulp.dest('build'));
 });
 

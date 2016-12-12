@@ -10,7 +10,7 @@ CSP.get_solution = function(vars_list, domains_list, neighbours, constraints){
 	//sort the vars array and put the one with the highest number of constraints first
 	vars_list.sort(function (a,b){
 		return neighbours[b].length - neighbours[a].length;
-	})
+	});
 	
 	//recurse into a solution selector
 	var res = CSP.select_soln([], vars_list, domains_list, neighbours, constraints);
@@ -19,7 +19,7 @@ CSP.get_solution = function(vars_list, domains_list, neighbours, constraints){
 		var soln_obj = {};
 		res.map(function(val, i, arr){
 			soln_obj[val["variable"]] = val["soln"];
-		})
+		});
 		return soln_obj;
 	}else
 		return false;

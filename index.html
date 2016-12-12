@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
   <title>Artificial Intelligence: A Modern Approach</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="./main.js"></script>
   <script type="text/javascript" src="jspm_packages/system.js"></script>
   <script type="text/javascript" src="config.js"></script>
   <script>
     System.import("src/index").catch(console.error.bind(console))
   </script>
+  <script> 
+   $(function(){
+      $('header').load("header.html"); 
+   });
+</script>
 </head>
 
 <body>
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Artificial Intelligence</h1>
-	<h2>A Modern Approach</h2>
-    <p>Stuart Russel and Peter Norvig</p>
-  </div>
-</div>
+<header>
+
+</header>
 
 <div class="container">
   <h2>Part Select</h2>
@@ -149,7 +152,7 @@
 </div>
 
 	<footer class="container-fluid text-center">
-		<img src="http://aima.cs.berkeley.edu/aima_logo.png"></img>
+		<img src="http://aima.cs.berkeley.edu/aima_logo.png">
 	</footer>
 </body>
 </html>

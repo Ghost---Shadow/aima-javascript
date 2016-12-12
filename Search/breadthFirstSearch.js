@@ -23,7 +23,7 @@ export function breadthFirstSearch(problem) {
         for (var child in node.expand(problem)) {
             if (!explored.has(child.state()) && frontier.indexOf(child.state()) === -1) {
                 if (problem.goalTest(child.state())) {
-                    return child
+                    return child;
                 }
                 frontier.push(child);
             }
